@@ -72,7 +72,7 @@ def import_data(prov_nat,year,pref,suf):
     """
     This function imports the raw data and, when the data are provided in province files, it merges the province files.
     'prov_nat' takes the string values 'prov' and 'nat'.
-    'year' has to be some of the following strings:'04','05','06','07','08','09','10','11','12','13','14','15','16','17','18'.
+    'year' has to be some of the following strings:'04','05','06','07','08','09','10','11','12','13','14','15','16','17','18','19','20','21','22'.
     'pre' and 'suf' are the (string) characters before and after the province number in the provincial files.
         When using national data, pref and suf are not used and can be filled with any value.
     """
