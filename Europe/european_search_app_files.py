@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """
 INFO about output files:
 
@@ -105,36 +104,36 @@ codes_to_filenames = {
 
 # SPECIAL CHARACTERS
 reverse_char_conversion = {
-    'a': ['ª','?','À','Á','Â','Ã','Ä','Å','à','á','â','ã','ä','å','a','a','?','?','a','?'],
+    'a': ['ª','ᵃ','À','Á','Â','Ã','Ä','Å','à','á','â','ã','ä','å','ā','ą','ȃ','а','ă','А'],
     'ae': ['Æ', 'æ'],
-    'b': ['?','?'],
-    'e': ['?','È','É','Ê','Ë','è','é','ê','ë','E','e','e','e','?','?'],
+    'b': ['В','в'],
+    'e': ['ᵉ','È','É','Ê','Ë','è','é','ê','ë','Ė','ė','ę','ě','е','ё'],
     # ROMAN NUMERAL ONE, UTF-16 0x2160, MAY INTRODUCE ERRORS WHEN USING CERTAIN ENCODINGS
-    'i': ['Í','Î','Ï','ì','í','î','ï','i','i','?','?','?','?'],
-    'o': ['º','?','Ò','Ó','Ô','Ö','Ø','ò','ó','ô','õ','ö','ø','o','o','?','?'],
-    'oe': ['O','o'],
-    'u': ['Ù','Ú','Û','Ü','ù','ú','û','ü','u','u','u','u','u'],
-    'c': ['C','c','C','c','?','?'],
-    'm':['?', '?',],
-    'r': ['R','r','?'],
-    's': ['S','s','S','s','S','s','?','?'],
-    't': ['t','t','?','?'],
-    'w': ['w'],
-    'y': ['ý','ÿ','y','?','?','?'],
-    'z': ['z','Z','z','Z','z','?','Z'],
-    'd': ['d','d'],
-    'l': ['l','L','l'],
-    'n': ['n','n','?','N'],
-    'k': ['?','?','?'],
-    'h': ['?','?'],
-    'p': ['?','?'],
-    'x': ['?', '?'],
-    'no': ['?'],
-    'ii': ['?'], # ROMAN NUMERAL TWO, UTF-16 0x2161, MAY INTRODUCE ERRORS WHEN USING CERTAIN ENCODINGS
-    'iii': ['?'], # ROMAN NUMERAL THREE, UTF-16 0x2162, MAY INTRODUCE ERRORS WHEN USING CERTAIN ENCODINGS
-    'iv': ['?'], # ROMAN NUMERAL FOUR, UTF-16 0x2173, MAY INTRODUCE ERRORS WHEN USING CERTAIN ENCODINGS
-    'v': ['?'], # ROMAN NUMERAL FIVE, UTF-16 0x2164, MAY INTRODUCE ERRORS WHEN USING CERTAIN ENCODINGS
-    ' ': ['\u2009','\u200b', '-','-','?','-','-','"','.','.','\u202f','*', '.', ',', ';', ':', '-', '_', '!', '¡', '¿', '?', '+', "'", '"']
+    'i': ['Í','Î','Ï','ì','í','î','ï','ĩ','ī','Ⅰ','І','і','ї'],
+    'o': ['º','ᵒ','Ò','Ó','Ô','Ö','Ø','ò','ó','ô','õ','ö','ø','ō','ő','о','О'],
+    'oe': ['Œ','œ'],
+    'u': ['Ù','Ú','Û','Ü','ù','ú','û','ü','ŭ','ů','ű','ǜ','ų'],
+    'c': ['Ć','ć','Č','č','С','с'],
+    'm':['М', 'м',],
+    'r': ['Ř','ř','ȓ'],
+    's': ['Ś','ś','Ş','ş','Š','š','ș','ṣ'],
+    't': ['ť','ŧ','Т','т'],
+    'w': ['ŵ'],
+    'y': ['ý','ÿ','ŷ','У','у','ў'],
+    'z': ['ź','Ż','ż','Ž','ž','ẑ','Ź'],
+    'd': ['ď','đ'],
+    'l': ['ľ','Ł','ł'],
+    'n': ['ń','ň','ŋ','Ń'],
+    'k': ['Ḱ','К','к'],
+    'h': ['Н','н'],
+    'p': ['Р','р'],
+    'x': ['Х', 'х'],
+    'no': ['№'],
+    'ii': ['Ⅱ'], # ROMAN NUMERAL TWO, UTF-16 0x2161, MAY INTRODUCE ERRORS WHEN USING CERTAIN ENCODINGS
+    'iii': ['Ⅲ'], # ROMAN NUMERAL THREE, UTF-16 0x2162, MAY INTRODUCE ERRORS WHEN USING CERTAIN ENCODINGS
+    'iv': ['Ⅳ'], # ROMAN NUMERAL FOUR, UTF-16 0x2173, MAY INTRODUCE ERRORS WHEN USING CERTAIN ENCODINGS
+    'v': ['Ⅴ'], # ROMAN NUMERAL FIVE, UTF-16 0x2164, MAY INTRODUCE ERRORS WHEN USING CERTAIN ENCODINGS
+    ' ': ['\u2009','\u200b', '‐','‑','‒','–','—','„','•','…','\u202f','*', '.', ',', ';', ':', '-', '_', '!', '¡', '¿', '?', '+', "'", '"']
 }
 
 
@@ -142,7 +141,7 @@ reverse_keep_chars = {
     # relevant special characters
     '&ccedil;': ['Ç','ç'],
     '&ntilde;': ['Ñ','ñ'],
-    'ss': ['ß','?', '?']
+    'ss': ['ß','ẞ', 'ẞ']
 }
 
 
@@ -265,7 +264,7 @@ def clean_eur_words(word, char_conversion, keep_chars, stopwords):
     RETURN: String, with a clean street name.
     """
     # allowed_chars defines what characters are allowed to be in the word at the end of the function
-    allowed_chars = string.ascii_letters + string.digits + string.whitespace + 'çÇñÑß??'
+    allowed_chars = string.ascii_letters + string.digits + string.whitespace + 'çÇñÑßẞẞ'
     
     # remove parenthesis
     word = re.sub(r'\([^)]*\)', '', word)
