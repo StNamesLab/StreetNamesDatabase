@@ -1,4 +1,4 @@
-Ôªø# -*- coding: unicode -*-
+# -*- coding: utf-8 -*-
 """
 INFO about output files:
 
@@ -105,22 +105,22 @@ codes_to_filenames = {
 
 # SPECIAL CHARACTERS
 reverse_char_conversion = {
-    'a': ['™','?','¿','¡','¬','√','ƒ','≈','‡','·','‚','„','‰','Â','a','a','?','?','a','?'],
-    'ae': ['∆', 'Ê'],
+    'a': ['¬™','?','√Ä','√Å','√Ç','√É','√Ñ','√Ö','√†','√°','√¢','√£','√§','√•','a','a','?','?','a','?'],
+    'ae': ['√Ü', '√¶'],
     'b': ['?','?'],
-    'e': ['?','»','…',' ','À','Ë','È','Í','Î','E','e','e','e','?','?'],
+    'e': ['?','√à','√â','√ä','√ã','√®','√©','√™','√´','E','e','e','e','?','?'],
     # ROMAN NUMERAL ONE, UTF-16 0x2160, MAY INTRODUCE ERRORS WHEN USING CERTAIN ENCODINGS
-    'i': ['Õ','Œ','œ','Ï','Ì','Ó','Ô','i','i','?','?','?','?'],
-    'o': ['∫','?','“','”','‘','÷','ÿ','Ú','Û','Ù','ı','ˆ','¯','o','o','?','?'],
+    'i': ['√ç','√é','√è','√¨','√≠','√Æ','√Ø','i','i','?','?','?','?'],
+    'o': ['¬∫','?','√í','√ì','√î','√ñ','√ò','√≤','√≥','√¥','√µ','√∂','√∏','o','o','?','?'],
     'oe': ['O','o'],
-    'u': ['Ÿ','⁄','€','‹','˘','˙','˚','¸','u','u','u','u','u'],
+    'u': ['√ô','√ö','√õ','√ú','√π','√∫','√ª','√º','u','u','u','u','u'],
     'c': ['C','c','C','c','?','?'],
     'm':['?', '?',],
     'r': ['R','r','?'],
     's': ['S','s','S','s','S','s','?','?'],
     't': ['t','t','?','?'],
     'w': ['w'],
-    'y': ['˝','ˇ','y','?','?','?'],
+    'y': ['√Ω','√ø','y','?','?','?'],
     'z': ['z','Z','z','Z','z','?','Z'],
     'd': ['d','d'],
     'l': ['l','L','l'],
@@ -134,15 +134,15 @@ reverse_char_conversion = {
     'iii': ['?'], # ROMAN NUMERAL THREE, UTF-16 0x2162, MAY INTRODUCE ERRORS WHEN USING CERTAIN ENCODINGS
     'iv': ['?'], # ROMAN NUMERAL FOUR, UTF-16 0x2173, MAY INTRODUCE ERRORS WHEN USING CERTAIN ENCODINGS
     'v': ['?'], # ROMAN NUMERAL FIVE, UTF-16 0x2164, MAY INTRODUCE ERRORS WHEN USING CERTAIN ENCODINGS
-    ' ': ['\u2009','\u200b', '-','-','?','-','-','"','.','.','\u202f','*', '.', ',', ';', ':', '-', '_', '!', '°', 'ø', '?', '+', "'", '"']
+    ' ': ['\u2009','\u200b', '-','-','?','-','-','"','.','.','\u202f','*', '.', ',', ';', ':', '-', '_', '!', '¬°', '¬ø', '?', '+', "'", '"']
 }
 
 
 reverse_keep_chars = {
     # relevant special characters
-    '&ccedil;': ['«','Á'],
-    '&ntilde;': ['—','Ò'],
-    'ss': ['ﬂ','?', '?']
+    '&ccedil;': ['√á','√ß'],
+    '&ntilde;': ['√ë','√±'],
+    'ss': ['√ü','?', '?']
 }
 
 
@@ -265,7 +265,7 @@ def clean_eur_words(word, char_conversion, keep_chars, stopwords):
     RETURN: String, with a clean street name.
     """
     # allowed_chars defines what characters are allowed to be in the word at the end of the function
-    allowed_chars = string.ascii_letters + string.digits + string.whitespace + 'Á«Ò—ﬂ??'
+    allowed_chars = string.ascii_letters + string.digits + string.whitespace + '√ß√á√±√ë√ü??'
     
     # remove parenthesis
     word = re.sub(r'\([^)]*\)', '', word)
