@@ -172,6 +172,11 @@ def data_cleaning(final):
     final['stname'] = final['stname'].str.replace('ò', 'o')
     final['stname'] = final['stname'].str.replace('ù', 'u')
     final['stname'] = final['stname'].str.replace('ü', 'u')
+    
+    # Replacing special characters by their html entity
+    final['stname'] = final['stname'].str.replace('ñ', '&ntilde;')
+    final['stname'] = final['stname'].str.replace('ç', '&ccedil;')    
+    
     #Remove text between parenthesis
     final['stname']=final['stname'].apply(lambda x: re.sub(r"\(.*\)", "", x))
     #Replacing some characters: (,),-,",
