@@ -6,7 +6,7 @@ This repository contains an accessible and readily analyzable street names datab
 
 CRS `EPSG:4326` is used for the geometries of all processed files. `utf-8` encoding is used for all street names processed files, except for the Spain's 2001-2022 street names files which use `latin1` encoding. 
 
-Special characters are handled in a particular way to minimize the loss of information. Most of them are * *normalize* * to its basic form (i.e. `á` to `a`). When the characters were too important for a language, they were replaced by their [html entity](https://oinam.github.io/entities/) to keep the character and avoid errors. Please, keep this in mind when executing queries to search for street names in certain languages. 
+Special characters are handled in a particular way to minimize the loss of information. Most of them are *normalized* to its basic form (i.e. `á` to `a`). When the characters were too important for a language, they were replaced by their [html entity](https://oinam.github.io/entities/) to keep the character and avoid errors. Please, keep this in mind when executing queries to search for street names in certain languages. 
 
 Street names tables are provided in csv files, using `$` as delimiter. For more information, see [Carmona-Derqui et al. (2023)](https://osf.io/4v2bx/) or the Python code provided. The requirements and data sources needed to obtain these tables are shown below.
 
@@ -42,7 +42,7 @@ If you use the data provided in this repository or obtanied throught the web sea
 Carmona-Derqui, D., Gutiérrez Mora, D., & Oto-Peralías, D. (2023). The spatial distribution of street names: visualizing and tabulating street-name data. [https://doi.org/10.31219/osf.io/4v2bx](https://doi.org/10.31219/osf.io/4v2bx)
 
 ## Contributing to the StreetNamesDatabase
-Researchers and other users interested in expanding the geographic coverage of the StreetNamesDatabase and the associated search apps are encouraged to contact the authors (@ dotoper@upo.es) to provide assitance regarding i) the country's language and its special characters, ii) a geographic layer containing the boundaries of towns or other local administrative units, and iii) testing the search app.
+Researchers and other users interested in expanding the geographic coverage of the StreetNamesDatabase and the associated search apps are encouraged to contact the authors (dotoper@upo.es or memerto@gmail.com) to provide assitance regarding i) the country's language and its special characters, ii) a geographic layer containing the boundaries of towns or other local administrative units, and iii) testing the search app.
 
 ## Acknowledgements
 We thank Oliver Wach, Ph.D. Candidate / Research Fellow from School of Business and Economics (Freie Universitaet Berlin), for this help to include Poland in the dataset.
