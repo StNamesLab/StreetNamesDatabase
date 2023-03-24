@@ -4,7 +4,8 @@ This repository contains the processed files used as the basis for the search ap
 
 ## General info
 
-CRS `EPSG:4326` is used for the geometries of all processed files. Encoding `utf-8` is used for all street names, but special characters are handled in a particular way to minimize the loss of information. Most of them are * *normalize* * to its basic form (i.e. `á` to `a`). When the characters were too important for a language, they were replaced by their [html entity](https://oinam.github.io/entities/) to preserve the character and avoid errors. Please, keep this in mind when executing queries to search for street names in certain languages. For more information, see [this publication](https://osf.io/4v2bx/) or the Python code in each case.
+CRS `EPSG:4326` is used for the geometries of all processed files. `utf-8` encoding is used for all street names processed files, but for the Spain's 2001-2022 street names
+files. In these files `latin1` encoding is used. Special characters are handled in a particular way to minimize the loss of information. Most of them are * *normalize* * to its basic form (i.e. `á` to `a`). When the characters were too important for a language, they were replaced by their [html entity](https://oinam.github.io/entities/) to keep the character and avoid errors. Please, keep this in mind when executing queries to search for street names in certain languages. For more information, see [this publication](https://osf.io/4v2bx/) or the Python code in each case.
 
 The requirements and the source of the data needed to obtain the files for each search app are shown below.
 
