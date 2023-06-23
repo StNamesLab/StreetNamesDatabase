@@ -44,5 +44,7 @@ Carmona-Derqui, D., Gutiérrez Mora, D., & Oto-Peralías, D. (2023). The spatial
 ## Contributing to the StreetNamesDatabase
 Researchers and other users interested in expanding the geographic coverage of the StreetNamesDatabase and the associated search apps are encouraged to contact the authors (dotoper@upo.es or memerto@gmail.com) to provide assitance regarding i) the country's language and its special characters, ii) a geographic layer containing the boundaries of towns or other local administrative units, and iii) testing the search app.
 
+We also welcome suggestions by researchers and other users for improving the Database and web search app to expand their capabilities and usefulness for the analysis of street names.
+
 ## Acknowledgements
 We thank Oliver Wach, Ph.D. Candidate / Research Fellow from School of Business and Economics (Freie Universitaet Berlin), for this help to include Poland in the dataset.
