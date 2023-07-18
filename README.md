@@ -1,6 +1,6 @@
 # StreetMapDatabase
 
-This repository contains an accessible and readily analyzable street names database for the US and a large part of Europe, as described in the paper [*The spatial distribution of street names: visualizing and tabulating street-name data*](https://osf.io/4v2bx/) (Carmona-Derqui, D., Gutiérrez-Mora, D. & Oto-Peralías, D.). It also contains the processed files used as the basis for the search apps on the [StNamesLab website](https://en.stnameslab.com/) and the Python code used to process them. The files have been separated into directories according to the search app to which they belong. For more information, see [Carmona-Derqui et al. (2023)](https://osf.io/4v2bx/).
+This repository contains an accessible and readily analyzable street names database for the US and a large part of Europe, as described in the paper [*Tabulating and Visualizing Street Name Data in the U.S. and Europe*](https://osf.io/4v2bx/) (Carmona-Derqui, D., Gutiérrez-Mora, D. & Oto-Peralías, D.). It also contains the processed files used as the basis for the search apps on the [StNamesLab website](https://en.stnameslab.com/) and the Python code used to process them. The files have been separated into directories according to the search app to which they belong. For more information, see [Carmona-Derqui et al. (2023)](https://osf.io/4v2bx/).
 
 ## General info
 
@@ -39,7 +39,7 @@ The data files containing the streets have been compressed using [Winrar](https:
 
 ## Citation
 If you use the data provided in this repository or obtanied throught the web search apps on STNAMES LAB, please cite:
-Carmona-Derqui, D., Gutiérrez Mora, D., & Oto-Peralías, D. (2023). The spatial distribution of street names: visualizing and tabulating street-name data. [https://doi.org/10.31219/osf.io/4v2bx](https://doi.org/10.31219/osf.io/4v2bx)
+Carmona-Derqui, D., Gutiérrez Mora, D., & Oto-Peralías, D. (2023). "Tabulating and Visualizing Street Name Data in the U.S. and Europe". Environment and Planning B: Urban Analytics and City Science, forthcoming.
 
 ## Contributing to the StreetNamesDatabase
 Researchers and other users interested in expanding the geographic coverage of the StreetNamesDatabase and the associated search apps are encouraged to contact the authors (dotoper@upo.es or memerto@gmail.com) to provide assitance regarding i) the country's language and its special characters, ii) a geographic layer containing the boundaries of towns or other local administrative units, and iii) testing the search app.
@@ -47,4 +47,4 @@ Researchers and other users interested in expanding the geographic coverage of t
 We also welcome suggestions by researchers and other users for improving the Database and web search app to expand their capabilities and usefulness for the analysis of street names.
 
 ## Acknowledgements
-We thank Oliver Wach, Ph.D. Candidate / Research Fellow from School of Business and Economics (Freie Universitaet Berlin), for this help to include Poland in the dataset.
+We thank Oliver Wach, Ph.D. Candidate / Research Fellow from School of Business and Economics (Freie Universitaet Berlin), for his help to include Poland in the dataset.
