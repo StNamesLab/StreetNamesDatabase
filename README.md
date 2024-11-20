@@ -8,11 +8,11 @@ CRS `EPSG:4326` is used for the geometries of all processed files. `utf-8` encod
 
 Special characters are handled in a particular way to minimize the loss of information. Most of them are *normalized* to its basic form (i.e. `á` to `a`). When the characters were too important for a language, they were replaced by their [html entity](https://oinam.github.io/entities/) to keep the character and avoid errors. Please, keep this in mind when executing queries to search for street names in certain languages.
 
-Street names tables are provided in csv files, using `$` as delimiter. For more information, see [Carmona-Derqui et al. (2023)](https://osf.io/4v2bx/) or the Python code provided. The requirements and data sources needed to obtain these tables are shown below.
+Street names tables are provided in csv files, using `$` as the delimiter. For more information, see [Carmona-Derqui et al. (2023)](https://osf.io/4v2bx/) or the Python code provided. The requirements and data sources needed to obtain these tables are shown below.
 
 ## Europe
 
-Street names data files from [OpenStreetMap](https://www.openstreetmap.org) are used to get the processed files. The raw data files for each country were downloaded in autum 2022 from [Geofabrik.de](https://download.geofabrik.de/europe.html). Also, [GISCO's last available comunnes layer](https://ec.europa.eu/eurostat/web/gisco/geodata/reference-data/administrative-units-statistical-units/communes#communes16) is needed to assign each street to the commune where it is localted. All other required files are provided in the repository.
+Street names data files from [OpenStreetMap](https://www.openstreetmap.org) are used to get the processed files. These datasets are licensed under the [Open Data Commons Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/) by the [OpenStreetMap Foundation (OSMF)](https://osmfoundation.org/). For more information about the license, please visit the [Open Street Map website](https://www.openstreetmap.org/copyright). The raw data files for each country were downloaded in autumn 2022 from [Geofabrik.de](https://download.geofabrik.de/europe.html). Also, [GISCO's last available comunnes layer](https://ec.europa.eu/eurostat/web/gisco/geodata/reference-data/administrative-units-statistical-units/communes#communes16) is needed to assign each street to the commune where it is located. All other required files are provided in the repository.
 | Source | Type | Link |
 |------------------------------|-------------|------|
 | OpenStreetMap | street data | [link](https://download.geofabrik.de/europe.html) |
@@ -20,7 +20,7 @@ Street names data files from [OpenStreetMap](https://www.openstreetmap.org) are 
 
 ## North America
 
-Street names data files from [OpenStreetMap](https://www.openstreetmap.org) are used to get the processed files. The raw data files for the US were downloaded in autum 2022, while for Canada and Mexico in autum 2023, from [Geofabrik.de](https://download.geofabrik.de/north-america/us.html). The table below shows the layers used in each country to assign streets to the administrative territorial division where they are located. All other required files are provided in the repository.
+Street names data files from [OpenStreetMap](https://www.openstreetmap.org) are used to get the processed files. These datasets are licensed under the [Open Data Commons Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/) by the [OpenStreetMap Foundation (OSMF)](https://osmfoundation.org/). For more information about the license, please visit the [Open Street Map website](https://www.openstreetmap.org/copyright). The raw data files for the US were downloaded in autumn 2022, while for Canada and Mexico in autumn 2023, from [Geofabrik.de](https://download.geofabrik.de/north-america/us.html). The table below shows the layers used in each country to assign streets to the administrative territorial division where they are located. All other required files are provided in the repository.
 
 | Country | Source | Type | Link |
 | --- | --- | --- | --- |
